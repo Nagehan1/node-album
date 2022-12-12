@@ -9,6 +9,7 @@ function Select(props) {
           Africa
         </option>
         <option className="select-option" value="America">
+          
           America
         </option>
         <option className="select-option" value="Asia">
