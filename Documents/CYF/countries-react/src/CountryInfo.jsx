@@ -11,6 +11,7 @@ function CountryInfo(props) {
                 <Card.Body>
                     <Card.Title>{props.data.name}</Card.Title>
                     <ul className="card__list">
+          
           <li>
             <span>Population: </span>
             {props.data.population}
