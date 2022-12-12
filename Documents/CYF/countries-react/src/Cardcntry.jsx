@@ -32,6 +32,7 @@ function Cardcntry() {
       <input placeholder="search" onChange={handleChange} type="text"/>
       <Select/>
      
+     
      <div className="container">
         <div className="row">
       {filtered.map((e) => {
