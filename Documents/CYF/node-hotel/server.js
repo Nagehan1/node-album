@@ -26,6 +26,7 @@ app.get("/bookings", (req, res) => {
 });
 
 app.post("/bookings", (res, req) => {
+    
 let newBooking=req.body
  bookings.push(newBooking);
  res.json(newBooking);
