@@ -53,6 +53,8 @@ app.get("/booking/search", (req, res) => {
   }
 });
 
+
+
 app.delete("/bookings/:id", (req, res) => {
   let booking = bookings.find(
     (booking) => booking.id === parseInt(req.params.id)
