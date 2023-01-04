@@ -39,6 +39,8 @@ app.delete("/lists/:name", function (request, response) {
     (list) => list.name.toLowerCase() === listName
   );
 
+
+  
   if (listIndex < 0) {
     response.status(404).send("Not found");
   }
