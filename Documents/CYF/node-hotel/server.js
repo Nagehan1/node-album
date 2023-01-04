@@ -36,7 +36,10 @@ app.get("/bookings/:id", (req, res) => {
   let bookingId = Number(req.params.id);
   let booking = bookings.filter((booking) => booking.id == bookingId);
   res.send(booking);
-});
+})
+
+
+
 
 app.get("/booking/search", (req, res) => {
   const search = req.query.date;
