@@ -31,9 +31,8 @@ app.get("/lists/:name", function (request, response) {
     response.status(404).send("Not found");
   }
   response.json(lists);
-});
+})
 
-// Delete single list
 app.delete("/lists/:name", function (request, response) {
   let listName = request.params.name.toLowerCase();
   let listIndex = data.findIndex(
