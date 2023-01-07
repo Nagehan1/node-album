@@ -9,7 +9,9 @@ app.listen(port, () => {
 })
 app.get("/", (req, res) => {
     res.send("<h1>Welcome to London Mini Guide</h1>");
-})
+}
+
+)
 // app.get("/:city/pharmacies", (req, res) => {
 //     let city = req.params.city;
 //     if (city === "harrow") {
