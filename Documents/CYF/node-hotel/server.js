@@ -6,11 +6,12 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-//Use this array as your (in-memory) data store.
+
 const bookings = require("./bookings.json");
 function validateEmail(email) {
   let re = /\S+@\S+\.\S+/;
   return re.test(email);
+  
 }
 
 function validateDate(checkin, checkout) {
@@ -20,7 +21,6 @@ app.get("/", function (request, response) {
   response.send("Hotel booking server.  Ask for /bookings, etc.");
 });
 
-// TODO add your routes and helper functions here
 app.get("/bookings", (req, res) => {
   res.send(bookings);
 });
