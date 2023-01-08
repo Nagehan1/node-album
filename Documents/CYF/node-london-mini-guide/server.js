@@ -12,54 +12,7 @@ app.get("/", (req, res) => {
 }
 
 )
-// app.get("/:city/pharmacies", (req, res) => {
-//     let city = req.params.city;
-//     if (city === "harrow") {
-//       res.send(harrow.pharmacies);
-//     } else if (city === "stratford") {
-//       res.send(stratford.pharmacies);
-//     } else if (city === "heathrow") {
-//       res.send(heathrow.pharmacies);
-//     } else {
-//       res.send("no city found");
-//     }
-// })
-// app.get("/:city/doctors", (req, res) => {
-//   let city = req.params.city;
-//   if (city === "harrow") {
-//     res.send(harrow.doctors);
-//   } else if (city === "stratford") {
-//     res.send(stratford.doctors);
-//   } else if (city === "heathrow") {
-//     res.send(heathrow.doctors);
-//   } else {
-//     res.send("no city found");
-//   }
-// });
-// app.get("/:city/colleges", (req, res) => {
-//   let city = req.params.city;
-//   if (city === "harrow") {
-//     res.send(harrow.colleges);
-//   } else if (city === "stratford") {
-//     res.send(stratford.colleges);
-//   } else if (city === "heathrow") {
-//     res.send(heathrow.colleges);
-//   } else {
-//     res.send("no city found");
-//   }
-// });
-// app.get("/:city/hospitals", (req, res) => {
-//   let city = req.params.city;
-//   if (city === "harrow") {
-//     res.send(harrow.hospitals);
-//   } else if (city === "stratford") {
-//     res.send(stratford.hospitals);
-//   } else if (city === "heathrow") {
-//     res.send(heathrow.hospitals);
-//   } else {
-//     res.send("no city found");
-//   }
-// });
+
 app.get("/:city/:category", (req, res) => {
   let city = req.params.city;
   let category = req.params.category;
