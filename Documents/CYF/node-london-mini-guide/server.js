@@ -13,6 +13,7 @@ app.get("/", (req, res) => {
 
 )
 
+
 app.get("/:city/:category", (req, res) => {
   let city = req.params.city;
   let category = req.params.category;
