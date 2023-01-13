@@ -32,15 +32,12 @@ app.get("/lists/:name", function (request, response) {
   }
   response.json(lists);
 })
-
 app.delete("/lists/:name", function (request, response) {
   let listName = request.params.name.toLowerCase();
   let listIndex = data.findIndex(
     (list) => list.name.toLowerCase() === listName
   );
 
-
-  
   if (listIndex < 0) {
     response.status(404).send("Not found");
   }
@@ -70,4 +67,4 @@ app.put("/lists/:name", function (request, response) {
 
 app.listen(PORT, function () {
   console.log("Your app is listening on port " + PORT);
-});
+})
